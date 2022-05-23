@@ -34,8 +34,29 @@
       Extra Info. <br />
       To get beck to this page just refresh the page or reclick the link that
       got you here. <br />
-      Have fun playing and to start just click the button.
+      Have fun playing and to start just sign in.
     </h5>
-    <div style="border: grey solid 2px; margin: 20px; height: 35%"></div>
+    <div
+      style="border: grey solid 2px; margin: 20px; height: 35%; padding: 5px"
+    >
+      <h4 align="center" id="logInText">Log In</h4>
+      <hr color="grey" />
+      <br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="username:"
+      />
+      <br />
+      <input
+        type="password"
+        id="password"
+        name="pass"
+        placeholder="password:"
+      />
+      <br />
+      <button type="button" id="login" onclick="logIn()">Login</button>
+    </div>
   </body>
 </html>
