@@ -66,7 +66,7 @@ function homeScreenOliver() {
         
     document.getElementById("logInTitle").innerHTML = "Home"
     document.getElementById("logInHR").style.display = "none"
-    document.getElementById("logInPara").innerHTML = "Welcome Oliver, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of lack Agilian-"
+    document.getElementById("logInPara").innerHTML = "Welcome Oliver, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
     document.getElementById("login").setAttribute( "onClick", "javascript: titleScreen();" );
     document.getElementById("password").style.display = "none"
@@ -76,7 +76,7 @@ function homeScreenSam() {
         
     document.getElementById("logInTitle").innerHTML = "Home"
     document.getElementById("logInHR").style.display = "none"
-    document.getElementById("logInPara").innerHTML = "Welcome Sam, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of lack Agilian-"
+    document.getElementById("logInPara").innerHTML = "Welcome Sam, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
     document.getElementById("login").setAttribute( "onClick", "javascript: titleScreen();" );
     document.getElementById("password").style.display = "none"
@@ -86,7 +86,7 @@ function homeScreenTyler() {
         
     document.getElementById("logInTitle").innerHTML = "Home"
     document.getElementById("logInHR").style.display = "none"
-    document.getElementById("logInPara").innerHTML = "Welcome Tyler, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of lack Agilian-"
+    document.getElementById("logInPara").innerHTML = "Welcome Tyler, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
     document.getElementById("login").setAttribute( "onClick", "javascript: titleScreen();" );
     document.getElementById("password").style.display = "none"
@@ -96,7 +96,7 @@ function homeScreenAidan() {
         
     document.getElementById("logInTitle").innerHTML = "Home"
     document.getElementById("logInHR").style.display = "none"
-    document.getElementById("logInPara").innerHTML = "Welcome Aidan, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of lack Agilian-"
+    document.getElementById("logInPara").innerHTML = "Welcome Aidan, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
     document.getElementById("login").setAttribute( "onClick", "javascript: titleScreen();" );
     document.getElementById("password").style.display = "none"
@@ -106,7 +106,7 @@ function homeScreenHenry() {
         
     document.getElementById("logInTitle").innerHTML = "Home"
     document.getElementById("logInHR").style.display = "none"
-    document.getElementById("logInPara").innerHTML = "Welcome Henry, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of lack Agilian-"
+    document.getElementById("logInPara").innerHTML = "Welcome Henry, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
     document.getElementById("login").setAttribute( "onClick", "javascript: titleScreen();" );
     document.getElementById("password").style.display = "none"
