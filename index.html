@@ -37,7 +37,7 @@
       Extra Info. <br />
       To get beck to this page just refresh the page or reclick the link that
       got you here. <br />
-      Have fun playing and to start just sign in.
+      Have fun playing and to start just log in.
     </h5>
     <div
       style="border: grey solid 2px; margin: 20px; height: 35%; padding: 5px"
@@ -59,8 +59,19 @@
         name="pass"
         placeholder="password:"
       />
+      <button type="button" id="start" onclick="logIn()">Start</button>
+      <br />
+      <button type="button" id="friends" onclick="logIn()">Friends</button>
       <br />
       <button type="button" id="login" onclick="logIn()">Login</button>
+      <br />
+      <br />
+      <button type="button" id="hint" onclick="logIn()">Hint</button>
     </div>
+    <script>
+      document.getElementById("friends").style.display = "none";
+      document.getElementById("start").style.display = "none";
+      document.getElementById("hint").style.display = "none";
+    </script>
   </body>
 </html>
