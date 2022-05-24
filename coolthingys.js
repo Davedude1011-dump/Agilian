@@ -53,35 +53,41 @@ function logIn() {
     }
 }
 function Game1Check() {
-        if (document.getElementById("username").value === "echo") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else if (document.getElementById("username").value === "Echo") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else if (document.getElementById("username").value === "echos") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else if (document.getElementById("username").value === "Echos") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else if (document.getElementById("username").value === "an echo") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else if (document.getElementById("username").value === "An echo") {
-            document.getElementById("logInText").innerHTML = "Correct!"
-            document.getElementById("logInText").style.color = "green"
-        }
-        else {
-            document.getElementById("logInText").innerHTML = "Wrong!"
-            document.getElementById("logInText").style.color = "red"
-        }
+    if (document.getElementById("username").value === "echo") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
     }
+    else if (document.getElementById("username").value === "Echo") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "echos") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "Echos") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "an echo") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "An echo") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else {
+        document.getElementById("logInText").innerHTML = "Wrong!"
+        document.getElementById("logInText").style.color = "red"
+    }
+}
 
 function Game1 () {
     document.getElementById("login").setAttribute( "onclick", "Game1Check()" )
