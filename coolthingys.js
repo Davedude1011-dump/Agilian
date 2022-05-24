@@ -52,20 +52,74 @@ function logIn() {
         document.getElementById("logInText").innerHTML = "Wrong Username"
     }
 }
+function Game1Check() {
+        if (document.getElementById("username").value === "echo") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else if (document.getElementById("username").value === "Echo") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else if (document.getElementById("username").value === "echos") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else if (document.getElementById("username").value === "Echos") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else if (document.getElementById("username").value === "an echo") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else if (document.getElementById("username").value === "An echo") {
+            document.getElementById("logInText").innerHTML = "Correct!"
+            document.getElementById("logInText").style.color = "green"
+        }
+        else {
+            document.getElementById("logInText").innerHTML = "Wrong!"
+            document.getElementById("logInText").style.color = "red"
+        }
+    }
+
+function Game1 () {
+    document.getElementById("login").setAttribute( "onclick", "Game1Check()" )
+    document.getElementById("logInText").style.display = "block"
+    document.getElementById("logInHR").style.display = "block"
+    document.getElementById("hint").style.display = "block"
+    document.getElementById("logInText").innerHTML = "What Do You Think?"
+    document.getElementById("logInTitle").innerHTML = "1"
+    document.getElementById("logInPara").innerHTML = "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I? "
+    document.getElementById("password").style.display = "none"
+    document.getElementById("start").style.display = "none"
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("username").style.display = "block"
+    document.getElementById("username").setAttribute( "placeholder", "Answer:" )
+    document.getElementById("hint").setAttribute( "onclick", "document.getElementById('logInText').innerHTML = 'Hint. Caves'" )
+    document.getElementById("username").value = ""
+    document.getElementById("login").innerHTML = "Check"
+    
+}
 
 function FriendsThomas() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Thomas this is the friends tab where you can see who else is playing the game with you.<br><br><br>Oliver • 5873<br><br>Sam • 1003<br><br>Tyler • 7766<br><br>Aidan • 1080<br><br>Henry • 0001<br><br>You :)"
     document.getElementById("login").innerHTML = "<-- Back"
     document.getElementById("login").setAttribute( "onClick", "javascript: homeScreenThomas();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" )
     document.getElementById("password").style.display = "none"
     document.getElementById("username").style.display = "none"
 }
 function FriendsOliver() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
@@ -76,7 +130,9 @@ function FriendsOliver() {
     document.getElementById("username").style.display = "none"
 }
 function FriendsSam() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
@@ -87,7 +143,9 @@ function FriendsSam() {
     document.getElementById("username").style.display = "none"
 }
 function FriendsTyler() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
@@ -98,7 +156,9 @@ function FriendsTyler() {
     document.getElementById("username").style.display = "none"
 }
 function FriendsAidan() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
@@ -109,7 +169,9 @@ function FriendsAidan() {
     document.getElementById("username").style.display = "none"
 }
 function FriendsHenry() {
-    document.getElementById("friends").style.display = "none";
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("check").style.display = "none"
+    document.getElementById("start").style.display = "none"
     document.getElementById("logInText").style.display = "none"
     document.getElementById("logInTitle").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
@@ -123,6 +185,7 @@ function FriendsHenry() {
 function homeScreenThomas() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• ADMIN</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Thomas, you made this so i wont bore you, good day :)."
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -132,12 +195,14 @@ function homeScreenThomas() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsThomas();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = "#A0E6FF"
 }
 function homeScreenOliver() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• Player</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Oliver, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -147,12 +212,14 @@ function homeScreenOliver() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsOliver();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = "#FF404C"
 }
 function homeScreenSam() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• Player</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Sam, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -162,12 +229,14 @@ function homeScreenSam() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsSam();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = ""
 }
 function homeScreenTyler() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• Player</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Tyler, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -177,12 +246,14 @@ function homeScreenTyler() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsTyler();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = ""
 }
 function homeScreenAidan() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• Player</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Aidan, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -192,12 +263,14 @@ function homeScreenAidan() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsAidan();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = ""
 }
 function homeScreenHenry() {
         
     document.getElementById("logInTitle").innerHTML = "Home ⠀<sup><i>• Player</i></sup>"
+    document.getElementById("check").style.display = "none"
     document.getElementById("logInHR").style.display = "none"
     document.getElementById("logInPara").innerHTML = "Welcome Henry, to begin press (start), to view who else is in the game press (Friends), and press sign out to go back best of luck Agilian-"
     document.getElementById("login").innerHTML = "<-- Sign Out"
@@ -207,8 +280,9 @@ function homeScreenHenry() {
     document.getElementById("friends").style.display = "block";
     document.getElementById("start").style.display = "block";
     document.getElementById("friends").setAttribute( "onClick", "javascript: FriendsHenry();" );
-    document.getElementById("start").setAttribute( "onClick", "javascript: Start();" );
+    document.getElementById("start").setAttribute( "onClick", "javascript: Game1();" );
     document.getElementById("logInText").style.display = "none"
+    document.getElementById("body").style.color = "#391285"
 }
 
 function blankSlateWithInput() {

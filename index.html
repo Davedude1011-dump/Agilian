@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html zoom="0.3">
   <head>
-    <title>The Agilia</title>
+    <title>Agilian's Agile Thinkers</title>
     <link rel="stylesheet" href="COLORS!.css" />
     <script src="coolthingys.js"></script>
     <meta
@@ -9,7 +9,7 @@
       content="width=device-width,height=device-height initial-scale=1"
     />
   </head>
-  <body>
+  <body id="body">
     <h1 align="center" id="logInTitle">Welcome</h1>
     <h5
       style="border: grey solid 2px; margin: 20px; padding: 5px"
@@ -59,6 +59,9 @@
         name="pass"
         placeholder="password:"
       />
+      <br />
+      <button type="button" id="check">Check</button>
+      <br />
       <button type="button" id="start" onclick="logIn()">Start</button>
       <br />
       <button type="button" id="friends" onclick="logIn()">Friends</button>
@@ -67,11 +70,14 @@
       <br />
       <br />
       <button type="button" id="hint" onclick="logIn()">Hint</button>
+
+      <br />
     </div>
     <script>
       document.getElementById("friends").style.display = "none";
       document.getElementById("start").style.display = "none";
       document.getElementById("hint").style.display = "none";
+      document.getElementById("check").style.display = "none";
     </script>
   </body>
 </html>
