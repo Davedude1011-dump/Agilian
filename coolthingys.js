@@ -52,6 +52,8 @@ function logIn() {
         document.getElementById("logInText").innerHTML = "Wrong Username"
     }
 }
+
+//game 1
 function Game1Check() {
     if (document.getElementById("username").value === "echo") {
         document.getElementById("logInText").innerHTML = "Correct!"
@@ -102,11 +104,97 @@ function Game1 () {
     document.getElementById("friends").style.display = "none"
     document.getElementById("username").style.display = "block"
     document.getElementById("username").setAttribute( "placeholder", "Answer:" )
-    document.getElementById("hint").setAttribute( "onclick", "document.getElementById('logInText').innerHTML = 'Hint. Caves'" )
+    document.getElementById("hint").setAttribute( "onclick", "document.getElementById('logInText').innerHTML = 'Hint. Alexa'" )
     document.getElementById("username").value = ""
     document.getElementById("login").innerHTML = "Check"
+    document.getElementById("next").setAttribute( "onclick", "Game2()" )
     
 }
+// Game 1
+
+// Game 2
+function Game2Check() {
+    if (document.getElementById("username").value === "heroine") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "Heroine") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else {
+        document.getElementById("logInText").innerHTML = "Wrong!"
+        document.getElementById("logInText").style.color = "red"
+    }
+}
+
+function Game2 () {
+
+    document.getElementById("login").setAttribute( "onclick", "Game2Check()" )
+    document.getElementById("logInText").style.display = "block"
+    document.getElementById("logInHR").style.display = "block"
+    document.getElementById("hint").style.display = "block"
+    document.getElementById("logInText").innerHTML = "What Do You Think?"
+    document.getElementById("logInText").style.color = "black"
+    document.getElementById("logInTitle").innerHTML = "2"
+    document.getElementById("logInPara").innerHTML = "What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word? "
+    document.getElementById("password").style.display = "none"
+    document.getElementById("start").style.display = "none"
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("username").style.display = "block"
+    document.getElementById("username").setAttribute( "placeholder", "Answer:" )
+    document.getElementById("hint").setAttribute( "onclick", "document.getElementById('logInText').innerHTML = 'Hint. English word'" )
+    document.getElementById("username").value = ""
+    document.getElementById("login").innerHTML = "Check"
+    document.getElementById("next").setAttribute( "onclick", "Game3()" )
+    document.getElementById("next").style.display = "none"
+    
+}
+// Game 2
+
+// Game 3
+function Game3Check() {
+    if (document.getElementById("username").value === "bookkeeper") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else if (document.getElementById("username").value === "Bookkeeper") {
+        document.getElementById("logInText").innerHTML = "Correct!"
+        document.getElementById("logInText").style.color = "green"
+        document.getElementById("next").style.display = "block"
+    }
+    else {
+        document.getElementById("logInText").innerHTML = "Wrong!"
+        document.getElementById("logInText").style.color = "red"
+    }
+}
+
+function Game3 () {
+
+    document.getElementById("login").setAttribute( "onclick", "Game3Check()" )
+    document.getElementById("logInText").style.display = "block"
+    document.getElementById("logInHR").style.display = "block"
+    document.getElementById("hint").style.display = "block"
+    document.getElementById("logInText").innerHTML = "What Do You Think?"
+    document.getElementById("logInText").style.color = "black"
+    document.getElementById("logInTitle").innerHTML = "3"
+    document.getElementById("logInPara").innerHTML = "What English word has three consecutive double letters? "
+    document.getElementById("password").style.display = "none"
+    document.getElementById("start").style.display = "none"
+    document.getElementById("friends").style.display = "none"
+    document.getElementById("username").style.display = "block"
+    document.getElementById("username").setAttribute( "placeholder", "Answer:" )
+    document.getElementById("hint").setAttribute( "onclick", "document.getElementById('logInText').innerHTML = 'Hint. English word'" )
+    document.getElementById("username").value = ""
+    document.getElementById("login").innerHTML = "Check"
+    document.getElementById("next").setAttribute( "onclick", "Game4()" )
+    document.getElementById("next").style.display = "none"
+    
+}
+// Game 3
 
 function FriendsThomas() {
     document.getElementById("friends").style.display = "none"
