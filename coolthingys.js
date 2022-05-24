@@ -42,7 +42,7 @@ function logIn() {
     }
     else if (document.getElementById("username").value === "Henry") {
         if (document.getElementById("password").value === "0001") {
-            homeScreenHenry()
+            alert('YOU HAVE BEEN BANNED')
         }
         else {
             document.getElementById("logInText").innerHTML = "Wrong Password"
